@@ -1,20 +1,10 @@
-import React from 'react';
-import styled from "styled-components";
+import React from "react";
+import { LayoutContainer } from "./styles";
 
 type Props = { children: React.ReactNode }
 
 export const Layout = React.memo<Props>((props) => (
-		<Container>
+		<LayoutContainer>
 			{props.children}
-		</Container>
+		</LayoutContainer>
 	));
-
-const Container = styled.div`
-    display: flex;
-    height: 100dvh;
-    width: 100dvw;
-
-    align-items: center;
-    justify-content: center;
-    background: #FFF;
-`;

@@ -1,6 +1,6 @@
-import React from 'react';
-import {Button} from "@app/components";
-import styled from "styled-components";
+import React from "react";
+import { Button } from "@app/components";
+import { Container, Counter, Row } from "./styles";
 
 export const Main = React.memo(() => {
 	const [count, setCount] = React.useState<number>(0);
@@ -19,22 +19,3 @@ export const Main = React.memo(() => {
 	);
 });
 
-
-const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-`;
-
-const Counter = styled.div`
-    border: 1px solid #DEDEDE;
-    border-radius: 8px;
-    padding: 4px 8px;
-`
-
-const Row = styled.div`
-    display: flex;
-    gap: 8px;
-    align-items: center;
-`
